@@ -126,22 +126,15 @@ while (i!=4)
       i=0;
       scanf("%d",&i);
 
-      if(i==1)
-	 {IN();
-	 getch();
-	 clrscr();
-	 }
-      if(i==2)
-	 {OUT();
-	 getch();
-	 clrscr();
-	 }
-      if(i==3)
-	{DISP();
-	getch();
-	clrscr();
-	 }
+      switch(i)
+      {
+        case 1: IN(); break;
+        case 2: OUT(); break;
+        case 3: DISP(); break;
+        default: break;
       }
 
-getch();
+      getch();
+      clrscr();
+
 }
